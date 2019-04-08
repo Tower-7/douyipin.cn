@@ -1,0 +1,629 @@
+.moreIcon {
+    width: 45px;
+    height: 45px;
+    background: url(../img/news/moreIcon.png) center center no-repeat;
+    margin: 0 auto;
+    margin-top: 40px; }
+  
+  .textBox {
+    padding: 30px; }
+    .textBox.hasThumbnail {
+      padding: 30px 30px 30px 182px; }
+      .textBox.hasThumbnail .infoBox .thumbnailBox {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 30px 15px 30px 0;
+        width: 182px;
+        height: 100%;
+        text-align: center;
+        vertical-align: middle; }
+        .textBox.hasThumbnail .infoBox .thumbnailBox img {
+          max-width: 100%;
+          max-height: 100%; }
+    .textBox h1 {
+      color: #3f3e55;
+      font-size: 17px;
+      opacity: 0.8;
+      padding-bottom: 15px; }
+    .textBox p {
+      font-size: 13px;
+      color: #4c565d;
+      opacity: 0.6;
+      line-height: 20px;
+      padding-bottom: 20px;
+      text-align: justify; }
+    .textBox .infoBox {
+      overflow: hidden; }
+      .textBox .infoBox .eye,
+      .textBox .infoBox .share,
+      .textBox .infoBox .time {
+        display: inline-block;
+        padding-left: 27px;
+        color: #d6d6db;
+        font-size: 13px;
+        margin-right: 12px;
+        line-height: 22px; }
+      .textBox .infoBox .eye {
+        background: url(../img/news/eye.png) left center no-repeat; }
+      .textBox .infoBox .share {
+        background: url(../image/home/share.png) left center no-repeat; }
+      .textBox .infoBox .time {
+        padding-left: 20px;
+        background: url(../img/news/time.png) left center no-repeat; }
+  
+  .newsCenter {
+    z-index: 2;
+    position: relative; }
+    .newsCenter .border2 {
+      border: 2px solid #f0f0f0; }
+    .newsCenter .content {
+      background: #fff;
+      position: relative;
+      overflow: hidden; }
+      .newsCenter .content .container {
+        background: url(../img/news/newsCenterBg2.png) 74% bottom no-repeat;
+        overflow: initial; }
+      .newsCenter .content .leftBox {
+        width: 820px;
+        border-right: 2px solid #f0f0f0;
+        padding-right: 20px;
+        padding-bottom: 150px;
+        margin: 0 auto; 
+    }
+        .newsCenter .content .leftBox .topBox {
+          overflow: hidden; }
+          .newsCenter .content .leftBox .topBox .newsImage {
+            width: 491px;
+            font-size: 0; }
+            .newsCenter .content .leftBox .topBox .newsImage img {
+              width: 100%; }
+            .newsCenter .content .leftBox .topBox .newsImage .textBox {
+              padding-top: 40px;
+              padding-bottom: 33px; }
+            .newsCenter .content .leftBox .topBox .newsImage:hover .textBox h1,
+            .newsCenter .content .leftBox .topBox .newsImage:hover .textBox p {
+              color: #3cb126; }
+          .newsCenter .content .leftBox .topBox .subRight {
+            width: 290px; }
+            .newsCenter .content .leftBox .topBox .subRight .textBox {
+              margin-bottom: 20px; }
+              .newsCenter .content .leftBox .topBox .subRight .textBox:hover h1,
+              .newsCenter .content .leftBox .topBox .subRight .textBox:hover p {
+                color: #3cb126; }
+        .newsCenter .content .leftBox .bottomList li {
+          background: #f7f7f8;
+          margin-bottom: 10px;
+          position: relative; }
+          .newsCenter .content .leftBox .bottomList li .textBox {
+            padding: 35px 30px 20px 182px; }
+            .newsCenter .content .leftBox .bottomList li .textBox.noThumbnail {
+              padding: 30px; }
+            .newsCenter .content .leftBox .bottomList li .textBox .infoBox {
+              height: 23px;
+              overflow: initial; }
+            .newsCenter .content .leftBox .bottomList li .textBox .source {
+              font-size: 14px;
+              padding-right: 15px; }
+          .newsCenter .content .leftBox .bottomList li.active .textBox h1 {
+            color: #3cb126; }
+          .newsCenter .content .leftBox .bottomList li.active .textBox p {
+            color: #3cb126; }
+          .newsCenter .content .leftBox .bottomList li.active .textBox .source {
+            color: #3cb126; }
+          .newsCenter .content .leftBox .bottomList li.active .textBox .infoBox .eye,
+          .newsCenter .content .leftBox .bottomList li.active .textBox .infoBox .share {
+            color: #308d1e; }
+      .newsCenter .content .rightBox {
+        width: 360px;
+        font-size: 0;
+        padding-top: 20px;
+        right: 0;
+        top: 0;
+        position: absolute; }
+        .newsCenter .content .rightBox .borderBg {
+          position: absolute;
+          width: 1000px;
+          top: 0;
+          left: -20px;
+          border-top: 2px solid #f0f0f0; }
+        .newsCenter .content .rightBox .contact {
+          height: 370px;
+          background: url(../image/news/newsCenterBg1.jpg) center center no-repeat;
+          padding: 150px 40px 0 0;
+          text-align: right;
+          opacity: 0.7; }
+          .newsCenter .content .rightBox .contact h1 {
+            font-size: 18px;
+            color: #2a283b;
+            padding-bottom: 5px; }
+          .newsCenter .content .rightBox .contact .p1 {
+            font-size: 14px;
+            color: #44434b;
+            padding-bottom: 30px; }
+          .newsCenter .content .rightBox .contact .p2 {
+            font-size: 13px;
+            color: #2a283b;
+            padding-bottom: 5px; }
+  
+  .viewpoint {
+    z-index: 2;
+    position: relative; }
+    .viewpoint .border2 {
+      border: 2px solid #f0f0f0; }
+    .viewpoint .content {
+      background: #fff;
+      position: relative;
+      overflow: hidden; }
+      .viewpoint .content .container {
+        background: url(../img/news/newsCenterBg2.png) 74% bottom no-repeat;
+        overflow: initial; }
+      .viewpoint .content .leftBox {
+        width: 820px;
+        border-right: 2px solid #f0f0f0;
+        padding-bottom: 40px; }
+        .viewpoint .content .leftBox .newsImage {
+          width: initial;
+          font-size: 0;
+          padding-bottom: 15px; }
+          .viewpoint .content .leftBox .newsImage img {
+            width: 100%; }
+          .viewpoint .content .leftBox .newsImage .textBox {
+            padding-top: 30px;
+            padding-bottom: 20px; }
+      .viewpoint .content .rightBox {
+        width: 360px;
+        font-size: 0;
+        padding-top: 20px;
+        right: 0;
+        top: 0;
+        position: absolute; }
+        .viewpoint .content .rightBox .borderBg {
+          position: absolute;
+          width: 1000px;
+          top: 0;
+          left: -20px;
+          border-top: 2px solid #f0f0f0; }
+        .viewpoint .content .rightBox .searchBox {
+          padding-bottom: 15px;
+          position: relative; }
+          .viewpoint .content .rightBox .searchBox input {
+            width: 100%;
+            outline: none;
+            border: none;
+            background: #eeeeee;
+            line-height: 55px;
+            height: 55px;
+            font-size: 16px;
+            color: #000;
+            text-indent: 20px; }
+          .viewpoint .content .rightBox .searchBox a {
+            position: absolute;
+            top: 0;
+            height: 55px;
+            right: 30px;
+            width: 18px;
+            background: url(../image/news/search.png) center center no-repeat; }
+        .viewpoint .content .rightBox .recBox {
+          overflow: hidden;
+          padding-bottom: 20px; }
+          .viewpoint .content .rightBox .recBox > a {
+            height: 270px;
+            background: url(../image/news/viewpoint4.jpg) center center no-repeat;
+            padding-top: 92px;
+            padding-left: 255px;
+            font-size: 22px;
+            color: #57514a;
+            margin-bottom: 10px; }
+          .viewpoint .content .rightBox .recBox .bottomBox {
+            overflow: hidden;
+            width: 100%; }
+          .viewpoint .content .rightBox .recBox .left,
+          .viewpoint .content .rightBox .recBox .right {
+            width: 48%;
+            height: 175px;
+            padding: 45px 0 0 30px;
+            font-size: 18px;
+            color: #3f3e55; }
+          .viewpoint .content .rightBox .recBox .left {
+            float: left;
+            background: url(../image/home/hand.jpg) center center no-repeat; }
+          .viewpoint .content .rightBox .recBox .right {
+            float: right;
+            background: url(../image/home/people.jpg) center center no-repeat; }
+        .viewpoint .content .rightBox .border {
+          width: 380px;
+          border-top: 2px solid #f0f0f0;
+          margin-left: -20px; }
+        .viewpoint .content .rightBox .center {
+          padding-top: 15px; }
+          .viewpoint .content .rightBox .center a {
+            background: url(../image/news/viewpoint5.jpg) center center no-repeat;
+            line-height: 180px;
+            color: #fff;
+            padding-left: 30px;
+            font-size: 18px; }
+        .viewpoint .content .rightBox .contact {
+          height: 370px;
+          background: url(../image/news/newsCenterBg1.jpg) center center no-repeat;
+          padding: 150px 40px 0 0;
+          text-align: right;
+          opacity: 0.7; }
+          .viewpoint .content .rightBox .contact h1 {
+            font-size: 18px;
+            color: #2a283b;
+            padding-bottom: 5px; }
+          .viewpoint .content .rightBox .contact .p1 {
+            font-size: 14px;
+            color: #44434b;
+            padding-bottom: 30px; }
+          .viewpoint .content .rightBox .contact .p2 {
+            font-size: 13px;
+            color: #2a283b;
+            padding-bottom: 5px; }
+  
+  .newsDetail {
+    z-index: 2;
+    position: relative; }
+    .newsDetail .border2 {
+      border: 2px solid #f0f0f0; }
+    .newsDetail .content {
+      background: #fff;
+      position: relative;
+      overflow: hidden; }
+      .newsDetail .content .container {
+        background: url(../img/news/newsCenterBg2.png) 100% bottom no-repeat;
+        overflow: initial; }
+      .newsDetail .content .leftBox {
+        min-height:750px;
+        width: 820px;
+        border-right: 2px solid #f0f0f0;
+        padding-right: 20px;
+        padding-bottom: 15px; }
+        .newsDetail .content .leftBox h1 {
+          font-size: 30px;
+          color: #3f3e55;
+          padding-bottom: 10px; }
+        .newsDetail .content .leftBox h2 {
+          font-size: 24px;
+          color: #58a263;
+          padding-bottom: 15px; }
+        .newsDetail .content .leftBox h3 {
+          font-size: 14px;
+          color: #4c565d;
+          line-height: 21px;
+          padding-bottom: 30px;
+          border-bottom: 3px solid #f0f0f0;
+          margin-bottom: 35px;
+          height: 55px;
+          position: relative; }
+          .newsDetail .content .leftBox h3 > span {
+            display: inline-block;
+            width: 100px;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            border-top: 3px solid #58a263; }
+          .newsDetail .content .leftBox h3 .eye,
+          .newsDetail .content .leftBox h3 .share {
+            display: inline-block;
+            padding-left: 27px;
+            color: #d6d6db;
+            font-size: 13px;
+            margin-right: 12px;
+            line-height: 22px; }
+          .newsDetail .content .leftBox h3 .eye {
+            background: url(../img/news/eye.png) left center no-repeat;
+            margin-left: 12px; }
+          .newsDetail .content .leftBox h3 .share {
+            background: url(../image/home/share.png) left center no-repeat; }
+          .newsDetail .content .leftBox h3 .shareButton {
+            display: inline-block;
+            position: relative;
+            top: -1px;
+            margin-left: 10px;
+            width: 23px;
+            height: 21px;
+            vertical-align: middle;
+            background: url(../image/news/share.png) center center no-repeat; }
+          .newsDetail .content .leftBox h3 .fr {
+            position: relative; }
+            .newsDetail .content .leftBox h3 .fr a {
+              width: 28px;
+              height: 28px;
+              display: inline-block;
+              vertical-align: middle; }
+              .newsDetail .content .leftBox h3 .fr a img {
+                width: 100%; }
+            .newsDetail .content .leftBox h3 .fr .qrBox1 {
+              position: absolute;
+              bottom: -285px;
+              left: -36px;
+              width: 204px;
+              background: #fff;
+              padding: 10px;
+              border-radius: 3px;
+              -webkit-box-shadow: 0px 0px 4px #222;
+                      box-shadow: 0px 0px 4px #222;
+              display: none;
+              z-index: 3; }
+              .newsDetail .content .leftBox h3 .fr .qrBox1 p {
+                font-size: 13px;
+                color: #282828;
+                line-height: 18px;
+                padding-bottom: 0; }
+              .newsDetail .content .leftBox h3 .fr .qrBox1 #QR {
+                padding: 10px 0;
+                text-align: center; }
+              .newsDetail .content .leftBox h3 .fr .qrBox1 .closeButton {
+                cursor: pointer;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                background: url(../image/close.png) center center no-repeat;
+                opacity: 0.7;
+                z-index: 2; }
+        .newsDetail .content .leftBox p {
+          font-size: 14px;
+          color: rgba(76, 86, 93, 0.7);
+          line-height: 24px;
+          padding-bottom: 10px; }
+          .newsDetail .content .leftBox p img {
+            max-width: 100%; }
+      .newsDetail .content .rightBox {
+        width: 360px;
+        font-size: 0;
+        padding-top: 20px;
+        right: 0;
+        top: 0;
+        position: absolute; }
+        .newsDetail .content .rightBox .borderBg {
+          position: absolute;
+          width: 1000px;
+          top: 0;
+          left: -20px;
+          border-top: 2px solid #f0f0f0; }
+        .newsDetail .content .rightBox .contact {
+          height: 370px;
+          background: url(../image/news/newsCenterBg1.jpg) center center no-repeat;
+          padding: 150px 40px 0 0;
+          text-align: right;
+          opacity: 0.7;
+          margin-bottom: 20px; }
+          .newsDetail .content .rightBox .contact h1 {
+            font-size: 18px;
+            color: #2a283b;
+            padding-bottom: 5px; }
+          .newsDetail .content .rightBox .contact .p1 {
+            font-size: 14px;
+            color: #44434b;
+            padding-bottom: 30px; }
+          .newsDetail .content .rightBox .contact .p2 {
+            font-size: 13px;
+            color: #2a283b;
+            padding-bottom: 5px; }
+        .newsDetail .content .rightBox .qrBox {
+          position: relative;
+          line-height: 178px;
+          background: #dceeed;
+          font-size: 0;
+          color: #6e7875;
+          padding: 0 30px; }
+          .newsDetail .content .rightBox .qrBox span {
+            font-size: 18px; }
+          .newsDetail .content .rightBox .qrBox img {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            margin-top: -52px; }
+  
+  .shareDoc .content {
+    padding-top: 0; }
+    .shareDoc .content .box1 {
+      height: 160px;
+      background: #fff; }
+      .shareDoc .content .box1 .container {
+        overflow: initial;
+        padding-top: 120px; }
+        .shareDoc .content .box1 .container .imgBox1,
+        .shareDoc .content .box1 .container .imgBox2 {
+          width: 230px;
+          height: 230px;
+          display: inline-block;
+          margin-right: 15px;
+          text-align: center;
+          font-size: 16px;
+          float: left; }
+        .shareDoc .content .box1 .container .imgBox1 {
+          padding-top: 65px;
+          color: #4e4e4e;
+          background: #fff; }
+          .shareDoc .content .box1 .container .imgBox1 img {
+            padding-bottom: 30px; }
+          .shareDoc .content .box1 .container .imgBox1 p {
+            opacity: 0.5;
+            line-height: 24px; }
+        .shareDoc .content .box1 .container .imgBox2 {
+          background: #26b268;
+          padding-top: 140px; }
+          .shareDoc .content .box1 .container .imgBox2 p {
+            color: #fff;
+            opacity: 0.6; }
+    .shareDoc .content .box2 {
+      background: #f4f4f5;
+      height: 240px; }
+    .shareDoc .content .box3 {
+      background: #fff; }
+      .shareDoc .content .box3 .container {
+        height: 470px; }
+        .shareDoc .content .box3 .container .middleBox,
+        .shareDoc .content .box3 .container .leftBox,
+        .shareDoc .content .box3 .container .rightBox {
+          height: 100%;
+          float: left;
+          width: 33.33%; }
+          .shareDoc .content .box3 .container .middleBox h1,
+          .shareDoc .content .box3 .container .leftBox h1,
+          .shareDoc .content .box3 .container .rightBox h1 {
+            font-size: 20px;
+            color: #26b268;
+            padding-bottom: 15px; }
+          .shareDoc .content .box3 .container .middleBox h2,
+          .shareDoc .content .box3 .container .leftBox h2,
+          .shareDoc .content .box3 .container .rightBox h2 {
+            font-size: 18px;
+            color: #4c565d;
+            opacity: 0.7;
+            padding-bottom: 30px; }
+          .shareDoc .content .box3 .container .middleBox p,
+          .shareDoc .content .box3 .container .leftBox p,
+          .shareDoc .content .box3 .container .rightBox p {
+            font-size: 14px;
+            color: #4c565d;
+            opacity: 0.7;
+            line-height: 24px; }
+          .shareDoc .content .box3 .container .middleBox img,
+          .shareDoc .content .box3 .container .leftBox img,
+          .shareDoc .content .box3 .container .rightBox img {
+            padding-bottom: 30px; }
+        .shareDoc .content .box3 .container .border1,
+        .shareDoc .content .box3 .container .border2 {
+          position: absolute;
+          bottom: 0;
+          height: 370px;
+          border-right: 5px solid #f4f4f5; }
+        .shareDoc .content .box3 .container .border1 {
+          left: 33.33%; }
+        .shareDoc .content .box3 .container .border2 {
+          left: 66.66%; }
+        .shareDoc .content .box3 .container .leftBox {
+          padding-top: 50px;
+          padding-right: 60px; }
+        .shareDoc .content .box3 .container .rightBox {
+          padding: 110px 60px 0 60px; }
+        .shareDoc .content .box3 .container .middleBox {
+          padding: 125px 60px 0 60px; }
+  
+  @media (max-width: 1200px) {
+    .newsCenter .content .container,
+    .newsDetail .content .container,
+    .viewpoint .content .container {
+      padding-right: 380px; }
+      .newsCenter .content .container .leftBox,
+      .newsDetail .content .container .leftBox,
+      .viewpoint .content .container .leftBox {
+        width: 100%; }
+  
+    .newsCenter .content .leftBox .topBox .newsImage {
+      width: 100%; }
+  
+    .newsCenter .content .leftBox .topBox .subRight {
+      float: left;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 20px; }
+      .newsCenter .content .leftBox .topBox .subRight .textBox {
+        width: 48%; }
+      .newsCenter .content .leftBox .topBox .subRight .textBox:nth-child(1) {
+        float: left; }
+      .newsCenter .content .leftBox .topBox .subRight .textBox:nth-child(2) {
+        float: right; }
+  
+    .shareDoc .content .box3 .container {
+      height: auto;
+      padding-bottom: 20px; } }
+  @media (max-width: 1120px) {
+    .newsDetail .content .leftBox p embed {
+      width: 100%; } }
+  @media (max-width: 900px) {
+    .newsDetail .content .leftBox p embed {
+      height: 310px; } }
+  @media (max-width: 780px) {
+    .viewpoint .content .container {
+      padding-right: 0; }
+      .viewpoint .content .container .leftBox {
+        border: none;
+        padding-right: 0; }
+      .viewpoint .content .container .rightBox {
+        display: none; }
+        .viewpoint .content .container .rightBox .borderBg {
+          display: none; } }
+  @media (max-width: 760px) {
+    .newsCenter .content .container,
+    .newsDetail .content .container {
+      padding-right: 0; }
+      .newsCenter .content .container .leftBox,
+      .newsDetail .content .container .leftBox {
+        min-height:auto;
+        border: none;
+        padding-right: 0; }
+        .newsCenter .content .container .leftBox .bottomList li .textBox,
+        .newsDetail .content .container .leftBox .bottomList li .textBox {
+          padding: 35px 0 20px; }
+          .newsCenter .content .container .leftBox .bottomList li .textBox.hasThumbnail .infoBox .thumbnailBox,
+          .newsDetail .content .container .leftBox .bottomList li .textBox.hasThumbnail .infoBox .thumbnailBox {
+            display: none; }
+      .newsCenter .content .container .rightBox,
+      .newsDetail .content .container .rightBox {
+        display: none; }
+        .newsCenter .content .container .rightBox .borderBg,
+        .newsDetail .content .container .rightBox .borderBg {
+          display: none; }
+  
+    .newsDetail .content .leftBox h3 {
+      height: 75px; }
+      .newsDetail .content .leftBox h3 .fl {
+        margin-bottom: 10px; }
+  
+    .shareDoc .content .box3 .container .border1,
+    .shareDoc .content .box3 .container .border2 {
+      display: none; }
+    .shareDoc .content .box3 .container .leftBox,
+    .shareDoc .content .box3 .container .middleBox,
+    .shareDoc .content .box3 .container .rightBox {
+      width: 100%;
+      padding: 30px; } 
+    }
+  @media (max-width: 620px) {
+    .textBox {
+      padding-left: 0px !important;
+      padding-right: 0px !important; }
+  
+    .infoBox .thumbnailBox {
+      display: none; } }
+  @media (max-width: 560px) {
+    .newsCenter .content .leftBox .topBox .subRight .textBox {
+      width: 100%; }
+  
+    .shareDoc .content .box3 .container .leftBox,
+    .shareDoc .content .box3 .container .middleBox,
+    .shareDoc .content .box3 .container .rightBox {
+      padding: 30px 0; }
+  
+    .shareDoc .content .box1 .container {
+      padding-top: 20px; }
+  
+    .viewpoint > .content {
+      padding-right: 0; } }
+  @meida (max-width:420px) {
+    .newsDetail .content .leftBox p embed {
+      height: 250px; } }
+  
+  
+  .wrap{width: 1200px;margin: 60px auto;}
+  .wrap ul{width: 100%;}
+  .wrap li{width: 100%;background: #f6f6f6;margin-bottom: 5px;overflow: hidden;}
+  .wrap li.on .font{float: right;}
+  .img{width: 36%; height: 316px;float: left;overflow: hidden;}
+  .font{float: left;width: 64%;padding: 40px 40px 0 30px; -webkit-box-sizing: border-box; box-sizing: border-box;}
+  .font h3{font-size: 17px;color: #2f2e3f;padding-bottom: 30px;line-height: 17px;}
+  .font p{font-size: 14px;color: #4c565d;padding-bottom: 10px;line-height: 22px;}
+  @media (max-width: 1200px){
+  .wrap{width: 100%;}
+  }
+  @media (max-width: 760px){
+  .font{width: 100%;}
+  .img{display:none;}
+  }

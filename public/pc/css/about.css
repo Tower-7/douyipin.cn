@@ -1,0 +1,1007 @@
+.mt30 {
+	margin-top: 30px;
+}
+
+.pt0 {
+	padding-top: 0 !important;
+}
+
+.w100 {
+	width: 100%;
+}
+.culture .leftBox {
+	float: left;
+	display: inline-blok;
+	width: 60%;
+}
+
+.leftImg img {
+	width: 80%;
+	height: auto;
+}
+
+.culture .rightBox {
+	float: left;
+	display: inline-blok;
+	width: 40%;
+}
+
+.culture .rightBox dl {
+	position: relative;
+	width: 100%;
+}
+
+.culture .rightBox dl dt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 11%;
+	max-width: 48px;
+}
+
+.culture .rightBox dl dt img {
+	width: 100%;
+}
+
+.culture .rightBox dl dd {
+	padding-left: 11%;
+	width: 100%;
+}
+
+.culture .rightBox dl dd h3 {
+	padding-left: 10px;
+	font-size: 16px;
+	color: #26b268;
+}
+
+.culture .rightBox dl dd h3 span,
+  .culture .rightBox dl dd p {
+	padding-left: 10px;
+	font-size: 16px;
+	color: #555;
+}
+
+.cultureVedioBox {
+	background: #c6e1d8;
+  background-size: cover;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+.cultureVedioBox h3 {
+	font-size: 20px;
+	color: #26b268;
+}
+
+.cultureVedioBox ul {
+	width: 100%;
+}
+
+.cultureVedioBox ul li {
+	float: left;
+	display: inline-block;
+	width: 100%;
+	max-width: 475px;
+	background: #26b268;
+}
+
+.cultureVedioBox ul li img {
+	width: 100%;
+}
+
+.cultureTitle {
+	font-size: 20px;
+	color: #26b268;
+}
+
+.bgNone {
+	background: none !important;
+}
+
+.culture {
+	z-index: 2;
+	position: relative;
+}
+
+.culture .border2 {
+	border: 2px solid #f0f0f0;
+}
+
+.culture .content.listCont {
+	width: 100%;
+	padding-top: 30px;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.culture .content.listCont .container {
+	background: url(../image/news/newsCenterBg2.png) right bottom no-repeat;
+	overflow: initial;
+}
+
+.culture .content.listCont .leftBox {
+	position: relative;
+	width: 800px;
+	border-right: 2px solid #f0f0f0;
+}
+
+.culture .content.listCont .leftBox .moreIcon {
+	margin-bottom: 40px;
+}
+
+.culture .content.listCont .leftBox .borderBg {
+	position: absolute;
+	width: 2000px;
+	top: 0;
+	right: -2px;
+	z-index: 2;
+	border-top: 2px solid #f0f0f0;
+}
+
+.culture .content.listCont .leftBox .bottomList li {
+	background: #fff;
+	padding-right: 20px;
+	position: relative;
+	border-bottom: 2px solid #f7f7f8;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox {
+	padding: 30px 30px 30px 182px;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox h1 {
+	color: #3f3e55;
+	font-size: 17px;
+	opacity: 0.8;
+	padding-bottom: 15px;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox p {
+	font-size: 13px;
+	color: #4c565d;
+	opacity: 0.6;
+	line-height: 20px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox {
+	overflow: hidden;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .eye,
+              .culture .content.listCont .leftBox .bottomList li .textBox .infoBox .share,
+              .culture .content.listCont .leftBox .bottomList li .textBox .infoBox .time {
+	display: inline-block;
+	padding-left: 27px;
+	color: #d6d6db;
+	font-size: 13px;
+	margin-right: 12px;
+	line-height: 22px;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .eye {
+	background: url(../image/home/eye.png) left center no-repeat;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .share {
+	background: url(../image/home/share.png) left center no-repeat;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .time {
+	padding-left: 20px;
+	background: url(../image/time.png) left center no-repeat;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .thumbnailBox {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 30px 15px 30px 0;
+	width: 182px;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .thumbnailBox img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.culture .content.listCont .leftBox .bottomList li:hover h1, .culture .content.listCont .leftBox .bottomList li:hover p, .culture .content.listCont .leftBox .bottomList li.active h1, .culture .content.listCont .leftBox .bottomList li.active p {
+	color: #3cb126;
+}
+
+.culture .content.listCont .rightBox {
+	padding-left: 10px;
+	width: 400px;
+	min-height: 300px;
+	font-size: 0;
+}
+
+.culture .content.listCont .rightBox ul {
+	width: 100%;
+}
+
+.culture .content.listCont .rightBox ul li {
+	float: left;
+	display: inline-block;
+	padding: 30px;
+	width: 195px;
+	height: 200px;
+	background: #8cd0b2 url(../image/about/petals.png) no-repeat 100px 110px;
+	text-align: left;
+}
+
+.culture .content.listCont .rightBox ul li h3 {
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: #3f3f3f;
+}
+
+.culture .content.listCont .rightBox ul li:first-child {
+	background: #b0d5ca;
+}
+
+.culture .content.listCont .rightBox ul li:first-child h3 {
+	color: #555;
+	opacity: 0.6;
+}
+
+.survey .content.bg {
+	background: #fff url(../image/news/newsCenterBg2.png) -350px bottom no-repeat;
+}
+
+.survey .container {
+	overflow: initial;
+}
+
+.survey .container .leftBox {
+	float: left;
+	display: inline-block;
+	width: 600px;
+	line-height: 24px;
+	padding-right: 40px;
+}
+.survey .container h3 {
+  font-size: 30px;
+  color: #3cb126;
+  padding-bottom: 5px;
+  width: 773px;
+  margin: 0 auto;
+}
+
+.survey .container .leftBox a {
+	display: inline-block;
+}
+
+.survey .container .leftBox .desc {
+	font-size: 20px;
+	color: #7a8085;
+}
+
+.survey .container .leftBox .p1 {
+	font-size: 13.5px;
+	color: #555;
+}
+
+.survey .container .leftBox .p2 {
+	font-size: 13.5px;
+	color: #3b4072;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.survey .container .leftBox .p3 {
+	font-size: 13.5px;
+	color: #868686;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.survey .container .rightBox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	float: left;
+	display: inline-block;
+	width: 427px;
+	background: #8fc31f;
+}
+
+.survey .container .rightBox .titleBox {
+	background: #fff;
+	border: 1px solid #eee;
+	line-height: 80px;
+	overflow: hidden;
+}
+
+.survey .container .rightBox .titleBox i,
+        .survey .container .rightBox .titleBox em {
+	font-style: normal;
+	font-size: 32px;
+	color: #ffb400;
+	vertical-align: middle;
+	position: relative;
+	top: 6px;
+	padding-right: 5px;
+	font-family: MONTSERRAT-REGULAR;
+}
+
+.survey .container .rightBox .titleBox .flBox {
+	float: left;
+	display: inline-block;
+	padding: 0 20px;
+	width: 218px;
+	height: 82px;
+	border-right: 1px solid #eee;
+}
+
+.survey .container .rightBox .titleBox .frBox {
+	float: right;
+	padding-right: 14px;
+}
+
+.survey .container .rightBox dl {
+	position: relative;
+	padding: 0 25px;
+	width: 100%;
+	height: 135px;
+	line-height: 135px;
+	color: #fff;
+	border-bottom: 1px solid #a8d050;
+}
+
+.survey .container .rightBox dl.secondH {
+	height: 118px;
+}
+
+.survey .container .rightBox dl.lastH {
+	height: 140px;
+}
+
+.survey .container .rightBox dl dt {
+	position: absolute;
+	width: 56px;
+	height: 100%;
+}
+
+.survey .container .rightBox dl dt.Icon1 {
+	background: url(../image/about/survey1.png) no-repeat center center;
+}
+
+.survey .container .rightBox dl dt.Icon2 {
+	background: url(../image/about/survey2.png) no-repeat center center;
+}
+
+.survey .container .rightBox dl dt.Icon3 {
+	background: url(../image/about/survey3.png) no-repeat center center;
+}
+
+.survey .container .rightBox dl dd {
+	padding-left: 85px;
+	width: 100%;
+	font-size: 15px;
+}
+
+.survey .container .rightBox dl dd h3 {
+	font-size: 33px;
+	font-family: MONTSERRAT-REGULAR;
+}
+
+.survey .container .rightBox dl dd i,
+          .survey .container .rightBox dl dd em {
+	font-size: 44px;
+	font-style: normal;
+	vertical-align: middle;
+	font-family: MONTSERRAT-REGULAR;
+}
+
+.survey .bg_f5fafc {
+	background: #e8f3f7 url(../image/about/culture1.jpg) center center no-repeat;
+	padding-top: 64px;
+}
+
+.survey .bg_f5fafc .container {
+	position: relative;
+	overflow: initial;
+}
+
+.survey .bg_f5fafc .container .mapBox {
+	overflow: hidden;
+	padding-right: 460px;
+}
+
+.survey .bg_f5fafc .container .mapBox .title {
+	font-size: 16px;
+	color: #8fc31f;
+	padding-bottom: 10px;
+}
+
+.survey .bg_f5fafc .container .mapBox .intro {
+	margin-top: 10px;
+	font-size: 14px;
+	color: rgba(43, 43, 43, 0.5);
+	line-height: 24px;
+}
+
+.survey .bg_f5fafc .container .mapBox .num {
+	color: #868686;
+	font-size: 14px;
+	padding-top: 75px;
+}
+
+.survey .bg_f5fafc .container .mapBox .num i,
+        .survey .bg_f5fafc .container .mapBox .num em {
+	font-size: 44px;
+	font-style: normal;
+	color: #ffb400;
+	vertical-align: text-top;
+	position: relative;
+	top: -10px;
+	padding-right: 5px;
+	font-family: MONTSERRAT-REGULAR;
+}
+
+.survey .bg_f5fafc .container .mapBox .rigthBg {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	z-index: 2;
+	width: 460px;
+	height: 100%;
+	background: url(../image/about/survey4.png) right top no-repeat;
+}
+
+.survey .bg_f5fafc .container .cityList {
+	padding-bottom: 60px;
+}
+
+.survey .bg_f5fafc .container .cityList a {
+	float: left;
+	display: inline-block;
+	margin-right: 28px;
+	color: #2b2b2b;
+	font-size: 14px;
+	opacity: 0.5;
+}
+.survey img {
+  float: right;
+  width: 430px;
+  display: inline-block;
+}
+
+.relative {
+	position: relative;
+}
+
+.w50 {
+	width: 50%;
+}
+
+.w100 {
+	width: 100%;
+}
+
+.pt30 {
+	padding-top: 30px;
+}
+
+.incident .content {
+	background: #fff url(../image/about/incident3.png) center bottom no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+
+.incident .content .borderBg {
+	border-top: 2px solid #eaeaea;
+	position: absolute;
+	top: 156px;
+	left: 0;
+	width: 100%;
+}
+
+.incident .content h3 {
+	font-size: 30px;
+	color: #3cb126;
+	padding-bottom: 5px;
+	width: 773px;
+	margin: 0 auto;
+}
+
+.culture .content h3 {
+	font-size: 30px;
+	color: #3cb126;
+	padding-bottom: 15px;
+	width: 773px;
+	margin: 0 auto;
+}
+
+.cultureVedioBox video {
+	width: 100%;
+}
+
+.videoWrap {
+	width: 773px;
+	margin: 0 auto;
+}
+
+.incident .content .container {
+	width: 1216px;
+	overflow: initial;
+}
+
+.incident .content .container .textBox {
+	position: absolute;
+	left: 708px;
+	top: 439px;
+}
+
+.incident .content .container .textBox h1 {
+	font-size: 22px;
+	color: #38464d;
+	padding-bottom: 9px;
+}
+
+.incident .content .container .textBox p {
+	font-size: 20px;
+	color: #6d6d6d;
+	opacity: 0.67;
+	text-indent: 65px;
+}
+
+.incident .content .container .sliderBox {
+	width: 100%;
+}
+
+.incident .content .container .sliderBox .bd ul {
+	overflow: hidden;
+}
+
+.incident .content .container .sliderBox .bd ul li {
+	float: left;
+	width: 288px;
+	min-height: 351px;
+	margin: 0 8px;
+	padding-top: 60px;
+	background: url(../image/about/incident1.png) 28px top no-repeat;
+	margin-bottom: 30px;
+}
+
+.incident .content .container .sliderBox .bd ul li h1,
+            .incident .content .container .sliderBox .bd ul li h2,
+            .incident .content .container .sliderBox .bd ul li img,
+            .incident .content .container .sliderBox .bd ul li p {
+	padding-right: 30px;
+}
+
+.incident .content .container .sliderBox .bd ul li h1 {
+	font-size: 48px;
+	color: #3aae36;
+	padding-bottom: 10px;
+	font-family: DINCOND-BOLD;
+	text-align: justify;
+}
+
+.incident .content .container .sliderBox .bd ul li h2 {
+	font-size: 14px;
+	color: #555;
+	padding-bottom: 5px;
+	line-height: 24px;
+	text-align: justify;
+}
+
+.incident .content .container .sliderBox .bd ul li p {
+	font-size: 14px;
+	color: #3aae36;
+	line-height: 24px;
+	text-align: justify;
+}
+
+.incident .content .container .sliderBox .left,
+        .incident .content .container .sliderBox .right {
+	position: absolute;
+	height: 55px;
+	width: 55px;
+	top: 10px;
+	background: center center no-repeat;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.incident .content .container .sliderBox .left:hover,
+          .incident .content .container .sliderBox .right:hover {
+	opacity: 1;
+}
+
+.incident .content .container .sliderBox .left {
+	left: -100px;
+	background-image: url(../img/about/left.png);
+}
+
+.incident .content .container .sliderBox .right {
+	right: -100px;
+	background-image: url(../img/about/right.png);
+}
+
+.team .content .topBox {
+	height: 370px;
+	position: relative;
+}
+
+.team .content .topBox .container {
+	overflow: initial;
+	background: #fff url(../image/about/team2.png) right bottom no-repeat;
+}
+
+.team .content .topBox .container .textBox {
+	position: absolute;
+	right: 17%;
+	top: 199px;
+}
+
+.team .content .topBox .container .textBox h1 {
+	font-size: 22px;
+	color: #38464d;
+	padding-bottom: 16px;
+}
+
+.team .content .topBox .container .textBox p {
+	font-size: 18px;
+	color: #38464d;
+	opacity: 0.3;
+	text-indent: 96px;
+}
+
+.team .content .topBox .container .infoBox {
+	position: absolute;
+	top: 79px;
+	left: 0;
+	font-size: 0;
+}
+
+.team .content .topBox .container .infoBox .wrapBox {
+	display: none;
+}
+
+.team .content .topBox .container .infoBox .wrapBox.active {
+	display: block;
+}
+
+.team .content .topBox .container .infoBox img {
+	width: 428px;
+	height: 291px;
+}
+
+.team .content .topBox .container .infoBox .info {
+	width: 873px;
+	background: #fff;
+	padding: 35px 35px 25px;
+}
+
+.team .content .topBox .container .infoBox .info h1 {
+	font-size: 36px;
+	color: #31397d;
+	padding-bottom: 20px;
+}
+
+.team .content .topBox .container .infoBox .info h1 span {
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 16px;
+}
+
+.team .content .topBox .container .infoBox .info p {
+	font-size: 13px;
+	color: #7a8085;
+	opacity: 0.7;
+	line-height: 24px;
+}
+
+.team .content .bottomBox {
+    /*height: 805px;*/
+	background: #fff url(../image/about/team3.png) center top no-repeat;
+	margin-bottom: 30px;
+}
+
+.team .content .bottomBox .container {
+	overflow: initial;
+	padding-top: 280px;
+}
+
+.team .content .bottomBox .container .listBox> p {
+	color: #38464d;
+	font-size: 12px;
+	float: left;
+	width: 100%;
+}
+
+.team .content .bottomBox .container a {
+	width: 24%;
+	float: left;
+	margin: 0 0.5% 20px;
+	font-size: 0;
+}
+
+.team .content .bottomBox .container a img {
+	width: 100%;
+}
+
+.team .content .bottomBox .container a h1 {
+	font-size: 18px;
+	opacity: 0.6;
+	color: #3b414f;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+
+.team .content .bottomBox .container a p {
+	font-size: 14px;
+	opacity: 0.6;
+	color: #3b414f;
+}
+
+@media (max-width: 1400px) {
+	.incident .content .container .sliderBox .left {
+		left: -48px;
+	}
+
+	.incident .content .container .sliderBox .right {
+		right: -48px;
+	}
+}
+
+@media (max-width: 1320px) {
+	.incident .content .container .sliderBox .left {
+		left: 10px;
+	}
+
+	.incident .content .container .sliderBox .right {
+		right: 10px;
+	}
+}
+
+@media (max-width: 1260px) {
+	.team .content .bottomBox {
+		background: #fff;
+		height: auto;
+	}
+
+	.team .content .bottomBox .container {
+		padding-top: 218px;
+	}
+
+	.team .content .bottomBox .container .listBox {
+		overflow: hidden;
+	}
+
+	.team .content .bottomBox .container a {
+		margin-bottom: 20px;
+		background: #efefef;
+	}
+
+	.team .content .bottomBox .container a h1 {
+		padding-left: 5px;
+	}
+
+	.team .content .bottomBox .container a p {
+		padding-left: 5px;
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.incident .content .container {
+		width: 100%;
+	}
+
+	.incident .content .container .textBox {
+		right: 10%;
+		left: initial;
+	}
+
+	.culture .leftBox {
+		width: 40%;
+	}
+
+	.culture .leftBox img {
+		width: 100%;
+	}
+
+	.culture .content.listCont .rightBox {
+		display: none;
+	}
+
+	.culture .content.listCont .leftBox {
+		width: 100%;
+		border-right: none;
+	}
+
+	.culture .rightBox {
+		width: 60%;
+		padding-bottom: 20px;
+	}
+
+	.survey .bg_f5fafc .container .mapBox .num {
+		padding-top: 10px;
+	}
+}
+
+@media (max-width: 980px) {
+	.team .content .topBox .container {
+		background: #fff;
+	}
+
+	.team .content .topBox .container .textBox {
+		display: none;
+	}
+}
+
+@media (max-width: 920px) {
+	.survey .container .leftBox {
+		padding-bottom: 20px;
+		padding-top: 40px;
+		padding-right: 0;
+	}
+
+	.survey .container .rightBox {
+		float: left;
+		position: relative;
+	}
+
+	.survey .bg_f5fafc .container .mapBox .w50:first-child {
+		width: 100%;
+	}
+
+	.survey .bg_f5fafc .container .mapBox .w50:nth-child(2) {
+		display: none;
+	}
+
+	.team .content .topBox .container .infoBox .info {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.survey .content.bg .container {
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 830px) {
+	.culture .leftBox {
+		display: none;
+	}
+
+	.culture .content.listCont .leftBox {
+		display: block;
+	}
+
+	.culture .content.listCont .leftBox .bottomList li .textBox {
+		padding-right: 0;
+	}
+
+	.culture .rightBox {
+		width: 100%;
+	}
+
+	.cultureVedioBox {
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	.survey .bg_f5fafc .container .mapBox {
+		padding-right: 0;
+	}
+
+	.survey .bg_f5fafc .container .mapBox .rigthBg {
+		display: none;
+	}
+}
+
+@media (max-width: 640px) {
+	.team .content .bottomBox .container a {
+		width: 49%;
+		margin: 0 0.5%;
+	}
+}
+
+@media (max-width: 620px) {
+	.team .content .topBox .container .infoBox .info h1 {
+		padding-bottom: 10px;
+	}
+
+	.team .content .topBox .container .infoBox .info h1 span {
+		display: block;
+		margin-left: 0;
+		padding-bottom: 10px;
+	}
+
+	.textBox {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	.infoBox .thumbnailBox {
+		display: none;
+	}
+}
+
+@media (max-width: 560px) {
+	.incident .content .container .sliderBox .left,
+    .incident .content .container .sliderBox .right {
+		display: none;
+	}
+
+	.incident .content .container:hover .sliderBox .left,
+    .incident .content .container:hover .sliderBox .right {
+		display: block;
+	}
+}
+
+@media (max-width: 500px) {
+	.team .content .topBox .container .infoBox img {
+		width: 100%;
+		height: auto;
+	}
+
+	.team .content .topBox .container .infoBox {
+		top: 32px;
+	}
+
+	.team .content .topBox .container {
+		background: #fff;
+	}
+
+	.mt30 {
+		margin-top: 15px;
+	}
+
+	.team .content .bottomBox .container a {
+		width: 100%;
+		margin: 0;
+	}
+
+	.survey .container .rightBox {
+		width: 100%;
+	}
+
+	.survey .container .rightBox .titleBox .flBox {
+		border-right: none;
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+	}
+
+	.survey .container .rightBox .titleBox .frBox {
+		width: 100%;
+		height: 60px;
+		line-height: 60px;
+		padding-left: 20px;
+	}
+
+	.survey .container .rightBox dl {
+		padding: 0;
+	}
+
+	.survey .container .rightBox dl dd {
+		padding-left: 20px;
+	}
+
+	.survey .container .rightBox dl dd i,
+          .survey .container .rightBox dl dd em {
+		font-size: 36px;
+	}
+
+	.survey .container .rightBox dl dt.Icon1,
+        .survey .container .rightBox dl dt.Icon2,
+        .survey .container .rightBox dl dt.Icon3 {
+		display: none;
+	}
+}
+  
+  /*# sourceMappingURL=about.css.map */

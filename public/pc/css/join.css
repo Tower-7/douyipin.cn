@@ -1,0 +1,407 @@
+.moreIcon {
+	width: 45px;
+	height: 45px;
+	background: url(../image/news/moreIcon.png) center center no-repeat;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+.pt0 {
+	padding-top: 0 !important;
+}
+
+.w100 {
+	width: 100%;
+}
+
+.culture .leftBox {
+	float: left;
+	display: inline-blok;
+	width: 60%;
+}
+
+.leftImg img {
+	width: 80%;
+	height: auto;
+}
+
+.culture .rightBox {
+	float: left;
+	display: inline-blok;
+	width: 40%;
+}
+
+.culture .rightBox dl {
+	position: relative;
+	width: 100%;
+}
+
+.culture .rightBox dl dt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 11%;
+	max-width: 48px;
+}
+
+.culture .rightBox dl dt img {
+	width: 100%;
+}
+
+.culture .rightBox dl dd {
+	padding-left: 11%;
+	width: 100%;
+}
+
+.culture .rightBox dl dd h3 {
+	padding-left: 10px;
+	font-size: 16px;
+	color: #26b268;
+}
+
+.culture .rightBox dl dd h3 span,
+  .culture .rightBox dl dd p {
+	padding-left: 10px;
+	font-size: 16px;
+	color: #bfbfbf;
+}
+
+.cultureVedioBox {
+	background: #d6e9eb;
+}
+
+.cultureVedioBox .container {
+	width: 1220px;
+	overflow: initial;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 100px;
+}
+
+.cultureVedioBox .container > img {
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	margin-left: -268px;
+	z-index: 1;
+}
+.container ul li .joinleft {
+    float: left;
+    width: 45%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 35px;
+    color: #555;
+}
+.container ul li .joinright {
+    float: right;
+    font-size: 14px;
+    line-height: 25px;
+    color: #555;
+}
+.cultureVedioBox .container ul {
+	width: 100%;
+	overflow: hidden;
+	padding-left: 1px;
+}
+
+.cultureVedioBox .container ul li {
+	margin: 0 10px;
+	float: left;
+	width: 386px;
+}
+
+.cultureVedioBox .container ul li.li_mobile {
+	display: none;
+}
+
+.cultureVedioBox .container ul li img {
+	width: 100%;
+}
+
+.cultureTitle {
+	font-size: 20px;
+	color: #26b268;
+}
+
+.bgNone {
+	background: none !important;
+}
+
+.culture {
+	z-index: 2;
+	position: relative;
+}
+
+.culture .border2 {
+	border: 2px solid #f0f0f0;
+}
+
+.culture .content {
+	padding-top: 0;
+}
+
+.culture .content .dec {
+	height: 285px;
+	background: #fff;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.culture .content .dec .container > h1 {
+	color: #4dbbb0;
+	font-size: 36px;
+	padding-bottom: 40px;
+}
+
+.culture .content .dec .container img {
+	padding-bottom: 40px;
+}
+
+.culture .content .dec .container > p {
+	font-size: 14px;
+	color: #7a8085;
+	opacity: 0.8;
+	line-height: 24px;
+	padding-bottom: 30px;
+}
+
+.culture .content .dec .container .textBox {
+	position: absolute;
+	text-align: center;
+	color: #fff;
+}
+
+.culture .content .dec .container .textBox h1 {
+	font-size: 30px;
+}
+
+.culture .content .dec .container .textBox p {
+	font-size: 13px;
+}
+
+.culture .content.listCont {
+	padding-top: 30px;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.culture .content.listCont .container {
+	background: url(../image/news/newsCenterBg2.png) right bottom no-repeat;
+	overflow: initial;
+}
+
+.culture .content.listCont .leftBox {
+	position: relative;
+	width: 800px;
+	border-right: 2px solid #f0f0f0;
+}
+
+.culture .content.listCont .leftBox .borderBg {
+	position: absolute;
+	width: 2000px;
+	top: 0;
+	right: -2px;
+	z-index: 2;
+	border-top: 2px solid #f0f0f0;
+}
+
+.culture .content.listCont .leftBox .bottomList li {
+	background: #fff;
+	padding-right: 20px;
+	position: relative;
+	border-bottom: 2px solid #f7f7f8;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox {
+	padding: 30px 30px 30px 182px;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox h1 {
+	color: #3f3e55;
+	font-size: 17px;
+	opacity: 0.8;
+	padding-bottom: 15px;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox p {
+	font-size: 13px;
+	color: #4c565d;
+	opacity: 0.6;
+	line-height: 20px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox {
+	overflow: hidden;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .eye,
+              .culture .content.listCont .leftBox .bottomList li .textBox .infoBox .share,
+              .culture .content.listCont .leftBox .bottomList li .textBox .infoBox .time {
+	display: inline-block;
+	padding-left: 27px;
+	color: #d6d6db;
+	font-size: 13px;
+	margin-right: 12px;
+	line-height: 22px;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .eye {
+	background: url(../image/home/eye.png) left center no-repeat;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .share {
+	background: url(../image/home/share.png) left center no-repeat;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .time {
+	padding-left: 20px;
+	background: url(../image/time.png) left center no-repeat;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .thumbnailBox {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 30px 15px 30px 0;
+	width: 182px;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.culture .content.listCont .leftBox .bottomList li .textBox .infoBox .thumbnailBox img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.culture .content.listCont .leftBox .bottomList li:hover h1, .culture .content.listCont .leftBox .bottomList li:hover p, .culture .content.listCont .leftBox .bottomList li.active h1, .culture .content.listCont .leftBox .bottomList li.active p {
+	color: #3cb126;
+}
+
+.culture .content.listCont .rightBox {
+	padding-left: 10px;
+	width: 400px;
+	min-height: 300px;
+	font-size: 0;
+}
+
+.culture .content.listCont .rightBox ul {
+	width: 100%;
+}
+
+.culture .content.listCont .rightBox ul li {
+	float: left;
+	display: inline-block;
+	padding: 30px;
+	width: 195px;
+	height: 200px;
+	background: #8cd0b2 url(../image/about/petals.png) no-repeat 100px 110px;
+	text-align: left;
+}
+
+.culture .content.listCont .rightBox ul li h3 {
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: #3f3f3f;
+}
+
+.culture .content.listCont .rightBox ul li:first-child {
+	background: #b0d5ca;
+}
+
+.culture .content.listCont .rightBox ul li:first-child h3 {
+	color: #555;
+	opacity: 0.6;
+}
+
+@media (max-width: 1220px) {
+	.cultureVedioBox .container {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.cultureVedioBox .container ul li {
+		width: 32%;
+		margin: 0 0.66%;
+	}
+
+	.culture .content.listCont .rightBox {
+		display: none;
+	}
+
+	.culture .content.listCont .leftBox {
+		width: 100%;
+		border: none;
+	}
+
+	.culture .content.listCont .leftBox .borderBg {
+		width: 100%;
+		right: 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.cultureVedioBox {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.culture .content.listCont .leftBox .bottomList li {
+		padding-right: 0;
+	}
+
+	.culture .content.listCont .leftBox .bottomList li .textBox {
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 640px) {
+	.cultureVedioBox .container ul li.li_pc {
+		display: none;
+	}
+
+	.cultureVedioBox .container ul li.li_mobile {
+		display: block;
+	}
+
+	.culture .content .dec {
+		padding-top: 30px;
+	}
+
+	.culture .content .dec .container > h1 {
+		padding-bottom: 20px;
+	}
+
+	.culture .content .dec .container img {
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 620px) {
+	.textBox {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	.infoBox .thumbnailBox {
+		display: none;
+	}
+}
+
+@media (max-width: 460px) {
+	.culture .content .dec .container > h1 {
+		font-size: 25px;
+	}
+}
+  
+  /*# sourceMappingURL=join.css.map */
