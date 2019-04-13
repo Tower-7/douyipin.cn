@@ -2,9 +2,16 @@ var mongoose = require('mongoose')
 
 var BannerSchema = new mongoose.Schema({
 	title: String,
+	title_two:String,
+	job:String,
+	intro:String,
+	word:String,
 	type: String,
 	link: String,
-	imgUrl: String,
+	txt:String,
+	btn:String,
+	pic: String,
+	number: String,
 	meta: {
 		createAt: {
 			type:Date,
@@ -31,15 +38,13 @@ BannerSchema.statics = {
 		.find({})
 		.exec(cb)
 	},
-	updateById: function(id,title,type,link,imgUrl,cb) {
-		return this
-		.update({_id: id},{$set:{title:title,type:type,link:link,imgUrl:imgUrl}})
-		.exec(cb)
+	updateById: async (banner,id,_banner)=> {
+		return banner
+		.update({_id: id},_banner,{upsert:true})
 	},
-	deletById: function(id,cb) {
-		return this
+	deletById: async(db,id) => {
+		return db
 		.remove({_id:id})
-		.exec(cb)
 	}
 }
 module.exports = BannerSchema

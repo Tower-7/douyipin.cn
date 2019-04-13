@@ -1,12 +1,18 @@
-var mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
-var ProjectSchema = new mongoose.Schema({
+let ProjectSchema = new mongoose.Schema({
 	title: String,
-	imgUrl: String,
-	content: String,
+	title_two:String,
+	job:String,
+	intro:String,
+	word:String,
+	type: String,
+	link: String,
+	txt:String,
+	pic: String,
 	meta: {
 		createAt: {
-			type: Date,
+			type:Date,
 			default:Date.now()
 		},
 		updateAt: {
@@ -30,15 +36,13 @@ ProjectSchema.statics = {
 		.find({})
 		.exec(cb)
 	},
-	updateById: function(id,content,cb) {
-		return this
-		.update({_id :id},{$set:{content:content}})
-		.exec(cb)
+	updateById: async (db,id,_db)=> {
+		return db
+		.update({_id: id},_db,{upsert:true})
 	},
-	deletById: function(id,cb) {
-		return this
+	deletById: async(db,id) => {
+		return db
 		.remove({_id:id})
-		.exec(cb)
 	}
 }
 module.exports = ProjectSchema

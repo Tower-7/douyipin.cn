@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" /><meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
-	<link rel="stylesheet" href="/pc/css/common.css" />
-	<link rel="stylesheet" href="https://www.vankeservice.com/css/style.css" />
-	<link rel="stylesheet" href="https://www.vankeservice.com/css/index.css" />
-	<script src="https://www.vankeservice.com/js/uaredirect.js?v=1.0.1" type="text/javascript" charset="utf-8"></script>
-	<script src="/library/js/jQuery.min.js"></script>
-	<title>江苏仁铼劳务服务有限公司</title>
+    <% include template/head.ejs %>
+	<link rel="stylesheet" href="/pc/css/index.css" />
 </head>
 
 <body class="home">
     <% include template/header.ejs %>
 
     <div class="index contentBox">
+
+        <% if(banners.length){ %> 
         <div id="masterslider" class="slideBox">
 			<div class="hd">
+                
 				<ul>
+                    <% banners.forEach(function(banner){ %>
 					<li class="on"></li>
-					<li class=""></li>
-					<li class=""></li>
+                    <% })%>
 				</ul>
 			</div>
 			<div class="bd">
 				<ul>
-					<li class="0000" style="width: 100%; background: url(/home/banner3.jpg) no-repeat center;">
-						<a href="" target="_blank" id="yhbanner"></a>
-					</li>
-					<li class="" style="width: 100%; background: url(/home/banner.jpg) no-repeat center;">
-						<a href="" target="_blank"></a>
-					</li>
-					<li class="" style="width: 100%; background: url(/home/banner2.jpg) no-repeat center;">
-						<a href="" target="_blank"></a>
-					</li>
+                    <% banners.forEach(function(banner){ %>
+                        <li class="0000" style="background: <%= banner.pic %> no-repeat center;">
+                            <a href="<%= banner.link %>" target="_blank" id="yhbanner"></a>
+                        </li>
+                    <% }) %>
 				</ul>
 			</div>
 			<a class="prev" href="javascript:void(0)"></a>
 			<a class="next" href="javascript:void(0)"></a>
         </div>
+        <% } %>
         <div class="introBox">
             <div class="container">
                 <div class="leftBox">
@@ -114,56 +109,29 @@
                 <div class="listBox">
                     <h1>新闻中心</h1>
                     <div id="container">
-                        <div class="newsBox">           
-							<a href="https&#58;&#47;&#47;lepao.vankeservice.com&#47;review.aspx&#63;typeId&#61;5&#38;id&#61;446">               
-								<div class="textBox">                   
-									<h3>2018.11.03</h3>                   
-									<h1>2019生态劳务&#8212;&#8212;徐州站</h1>                  
-									<p style="padding-bottom: 20px;">三星在周三发布了2015财年第三财季的财报，运营利润同比大增了79.8%至63亿美元，受到财报的刺...</p>                   
-									<span class="eye">
-										<i class="homeIcon homeIcon-eye"></i>11986
-									</span>               
-								</div>           
-							</a>       
-						</div>
-						<div class="newsBox">           
-							<a href="https&#58;&#47;&#47;lepao.vankeservice.com&#47;review.aspx&#63;typeId&#61;5&#38;id&#61;445">               
-								<div class="textBox">                   
-									<h3>2018.10.28</h3>                   
-									<h1>滴滴拿牌照：解读专车“上</h1>                   
-                                    <p style="padding-bottom: 20px;">10月8日下午，上海市交通委向滴滴快的专车平台颁发了网络约租车（俗称专车）平台经营资格...</p>                   
-                                    <span class="eye"><i class="homeIcon homeIcon-eye"></i>9346</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="newsBox">
-                            <a href="https&#58;&#47;&#47;lepao.vankeservice.com&#47;review.aspx&#63;typeId&#61;5&#38;id&#61;442">
-                                <div class="textBox">
-                                    <h3>2018.10.27</h3>
-                                    <h1>人事行政管理职责是什么</h1>
-                                    <p style="padding-bottom: 20px;">一、制度建设：
-                                            1、涉及制度：人事管理制度；考评制度；会务管理制度；行为规范管理制度；考勤制度；安...</p>
-                                            <span class="eye"><i class="homeIcon homeIcon-eye"></i>5260</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="newsBox">
-                                    <a href="https&#58;&#47;&#47;lepao.vankeservice.com&#47;review.aspx&#63;typeId&#61;5&#38;id&#61;444">
-                                        <div class="textBox">
-                                            <h3>2018.10.27</h3>
-                                            <h1>2019生态劳务&#8212;&#8212;郑州站</h1>
-                                            <p style="padding-bottom: 20px;">10月27日上午，2018郑州万科社区乐跑赛在郑州天健湖畔欢乐开跑，此次活动共有来自14个社区、超1200名万科物业社区业主参加。</p>                   
-									<span class="eye"><i class="homeIcon homeIcon-eye"></i>5897</span>               
-								</div>           
-							</a>       
-						</div>
+                        <% if(newes.length){
+                            newes.forEach(function(news){ %>
+                            <div class="newsBox">           
+                                <a href="/news/<%= news._id%>">               
+                                    <div class="textBox">                   
+                                        <h3>2019.3.05</h3>                   
+                                        <h1><%= news.title%></h1>                  
+                                        <p style="padding-bottom: 20px;">三星在周三发布了2015财年第三财季的财报，运营利润同比大增了79.8%至63亿美元，受到财报的刺...</p>                   
+                                        <span class="eye">
+                                            <i class="homeIcon homeIcon-eye"></i>11986
+                                        </span>               
+                                    </div>           
+                                </a>       
+                            </div>
+                            <% })
+                        } %>
                     </div>
                 </div>
                 <div class="recBox">
                     <a href="/business" style="background-image: url(/home/business.jpg)"></a>
                     <div class="bottomBox">
-                        <a href="javascript::" class="left" style="background-image: url(/home/joinUs.jpg)"></a>
-                        <a href="javascript::" class="right" style="background-image: url(/home/getJob.jpg)"></a>
+                        <a href="javascript::" class="left"></a>
+                        <a href="javascript::" class="right"></a>
                     </div>
                 </div>
             </div>
@@ -171,10 +139,8 @@
     </div>
     <% include template/footer.ejs %>
     <% include template/sidebar.ejs %>
-    <script src="https://www.vankeservice.com/js/jquery.SuperSlide.2.1.2.js"></script>
-    <script src="https://www.vankeservice.com/js/smooth.js"></script>
-    <script src="https://www.vankeservice.com/js/blocksit.js"></script>
-    <script src="https://www.vankeservice.com/js/main.js"></script>
+    <% include template/script.ejs %>
+    <script src="/pc/js/blocksit.js"></script>
     <script type="text/javascript">
         jQuery("#masterslider").slide({ mainCell: ".bd ul", effect: "left", autoPlay: true, interTime: 8000 });
         $(window).load(function () {
@@ -189,7 +155,7 @@
                 prevCell: ".prev",
                 nextCell: ".next",
                 effect: "left",
-                autoPlay: true,
+                autoPlay: false,
                 vis: 3,
                 easing: "easeOutCirc",
                 pnLoop: true,

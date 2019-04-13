@@ -36,10 +36,9 @@ ReadSchema.statics = {
 		.update({_id: id},{$set:{title:title,type:type,link:link,imgUrl:imgUrl}})
 		.exec(cb)
 	},
-	deletById: function(id,cb) {
-		return this
+	deletById: async(db,id) => {
+		return db
 		.remove({_id:id})
-		.exec(cb)
 	}
 }
 module.exports = ReadSchema

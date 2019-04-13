@@ -1,0 +1,104 @@
+
+<html>
+
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title><% if(logos.length){%><%= logos[0].title %><% } %>-后台管理</title>
+        <link type="text/css" rel="stylesheet" href="/admin/css/init.css">
+        <link type="text/css" rel="stylesheet" href="/admin/common/style.css">
+        <link type="text/css" rel="stylesheet" href="/admin/css/news.css">
+        </head>
+        
+        <body>
+        <header class="header">
+            <div class="logos">
+                <img src="<% if(logos.length){%><%= logos[0].pic %><% } %>" alt="">
+                <span>--后台管理页面</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/admin">首页</a></li>	
+                    <li><a href="/admin/product">企业</a></li>	
+                    <li><a href="/admin/news">新闻</a></li>	
+                    <li><a href="">关于我们</a></li>	
+                    <li><a href="">招贤纳士</a></li>	
+                </ul>
+            </nav>
+        </header>
+        <section class="wrap">
+            <div class="sidebar">
+                <h3>新闻列表</h3>
+                <ul>
+                    <li>新闻列表</li>
+                </ul>
+            </div>
+        
+            <div class="news program">
+                <h4 class="title"></h4>
+                <div class="add">＋</div>
+                <table class="table" >
+                    <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th width="30%">产品名</th>
+                            <th width="40%">型号</th>
+                            <th></th>
+                            <th>设 置</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if(newes.length){
+                            newes.forEach(function(news){ %>
+                                <tr>
+                                    <td><%= news.index %></td>
+                                    <td><%= news.title %></td>
+                                    <td><%= news.type %></td>
+                                    <td class="detail" data-id="<%= news._id %>">详情</td>
+                                    <td class="del" data-id="<%= news._id %>">删除</td>
+                                </tr>
+                            <% })
+                        } %>
+                    </tbody>
+                </table>
+            </div> 
+        
+            <div class="editWrap">
+                <div class="editInner">
+                    <input class="title" type="text" name="" value="请输入产品名">
+                    <div class="editController">
+                        <img class="add" src="/admin/img/add.jpg" alt="">
+                        <div class="addController">
+                            <div class="text">
+                                <img src="/admin/img/text.png" alt="">
+                            </div>
+                            <div class="pic">
+                                <a href="javascript:;" class="file_box">
+                                    <input class="selectPic" type="file">
+                                    <img src="/admin/img/pic.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="editContent">
+                        </div>
+                        <span class="insertContent"> + 添 加 内 容</span>
+                    </div>
+                </div>
+                <div class="editTop">
+                    <ul>
+                        <li class="submit" data-id="id">发布产品</li>
+                        <li class="close">关闭</li>
+                    </ul>
+                </div>
+            </div>
+        
+        </section>
+        <script src="/library/js/jQuery.min.js"></script>
+        <script src="/admin/js/news.js"></script>
+        <script>
+            
+        </script>
+        </body>
+        
+        </html>

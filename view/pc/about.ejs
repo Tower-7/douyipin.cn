@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
  <head>
-  <meta charset="UTF-8" />
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
-  <title>江苏仁铼劳务服务有限公司</title>
-  <link rel="stylesheet" href="/pc/css/common.css" /> 
-  <script src="https://www.vankeservice.com/js/jQuery.min.js"></script> 
-  <script src="https://www.vankeservice.com/js/jquery.SuperSlide.2.1.2.js"></script> 
-  <script src="https://www.vankeservice.com/js/main.js"></script> 
-  <link rel="stylesheet" href="/pc/css/about.css" /> 
+    <% include template/head.ejs %>
+    <link rel="stylesheet" href="/pc/css/about.css" /> 
  </head> 
  <body>
   <% include template/header.ejs %>
   <div class="survey commonHtml"> 
-   <div class="bannerBox" style="background-image: url(/home/banner.jpg)"></div> 
+   <div class="bannerBox" style="background-image: url(/pc/img/about-04.jpg)"></div> 
    <div class="content bg"> 
     <div class="container clearfix"> 
         <h3>概况 &nbsp; &nbsp;</h3> 
@@ -48,7 +42,59 @@
     </div> 
    </div> 
   </div> 
-  <script src="https://www.vankeservice.com/js/smooth.js"></script> 
+
+  <div class="culture commonHtml"> 
+   <div class="content"> 
+    <h3>企业文化 &nbsp; &nbsp;</h3> 
+    <div class="container"> 
+     <div class="leftBox leftImg"> 
+      <img src="/pc/img/about/cultureIntro-01.png" alt="" /> 
+     </div> 
+     <div class="rightBox"> 
+      <dl class="mt30"> 
+       <dt> 
+        <img src="/pc/img/mission.png" alt="" />
+       </dt> 
+       <dd> 
+        <h3>使命</h3> 
+        <p>让天下没有难找的工作</p> 
+       </dd> 
+      </dl> 
+      <dl class="mt30"> 
+       <dt> 
+        <img src="/pc/img/vision.png" alt="" />
+       </dt> 
+       <dd> 
+        <h3>愿景</h3> 
+        <p>愿找工作因我而简单</p> 
+       </dd> 
+      </dl> 
+      <dl class="mt30"> 
+       <dt> 
+        <img src="/pc/img/values.png" alt="" />
+       </dt> 
+       <dd> 
+        <h3>价值观</h3> 
+        <p>从实际出发，以为解决劳务问题为初衷，实现共赢</p> 
+       </dd> 
+      </dl> 
+     </div> 
+    </div> 
+    <div class="cultureVedioBox"> 
+     <div class="container"> 
+      <h3 class="mt30">企业视频</h3> 
+      <div class="videoWrap"> 
+       <video width="773" controls="controls" poster="/pc/img/about/cover-01.jpg"> 
+        <source src="http://wqn.jsstlw.com/douyipin.mp4" type="video/mp4"></source> 
+       </video> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <% include template/footer.ejs %>
+  <% include template/sidebar.ejs %>
+  <% include template/script.ejs %>
   <script type="text/javascript">
     $(function () {
         $(".sliderBox").slide({
@@ -76,56 +122,5 @@
             }
         });
 </script> 
-  <div class="culture commonHtml"> 
-   <div class="content"> 
-    <h3>企业文化 &nbsp; &nbsp;</h3> 
-    <div class="container"> 
-     <div class="leftBox leftImg"> 
-      <img src="/pc/img/about/cultureIntro-01.png" alt="" /> 
-     </div> 
-     <div class="rightBox"> 
-      <dl class="mt30"> 
-       <dt> 
-        <img src="https://www.vankeservice.com/image/about/mission.png" alt="" />
-       </dt> 
-       <dd> 
-        <h3>使命</h3> 
-        <p>让天下没有难找的工作</p> 
-       </dd> 
-      </dl> 
-      <dl class="mt30"> 
-       <dt> 
-        <img src="https://www.vankeservice.com/image/about/vision.png" alt="" />
-       </dt> 
-       <dd> 
-        <h3>愿景</h3> 
-        <p>愿找工作因我而简单</p> 
-       </dd> 
-      </dl> 
-      <dl class="mt30"> 
-       <dt> 
-        <img src="https://www.vankeservice.com/image/about/values.png" alt="" />
-       </dt> 
-       <dd> 
-        <h3>价值观</h3> 
-        <p>从实际出发，以为解决劳务问题为初衷，实现共赢</p> 
-       </dd> 
-      </dl> 
-     </div> 
-    </div> 
-    <div class="cultureVedioBox"> 
-     <div class="container"> 
-      <h3 class="mt30">企业视频</h3> 
-      <div class="videoWrap"> 
-       <video width="773" controls="controls" poster="/pc/img/about/cover-01.jpg"> 
-        <source src="http://wqn.jsstlw.com/douyipin.mp4" type="video/mp4"></source> 
-       </video> 
-      </div> 
-     </div> 
-    </div> 
-   </div> 
-  </div> 
-  <% include template/footer.ejs %>
-  <% include template/sidebar.ejs %>
  </body>
 </html>

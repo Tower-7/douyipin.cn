@@ -1,0 +1,110 @@
+
+<html>
+
+    <head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title><% if(logos.length){%><%= logos[0].title %><% } %>-后台管理</title>
+    
+    
+    <link type="text/css" rel="stylesheet" href="/admin/css/init.css">
+    <link type="text/css" rel="stylesheet" href="/admin/css/style.css">
+    <link type="text/css" rel="stylesheet" href="/admin/css/product.css">
+    
+    <body>
+    <header class="header">
+        <div class="logos">
+            <img src="<% if(logos.length){%><%= logos[0].pic %><% } %>" alt="">
+            <span>--后台管理页面</span>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/admin">首页</a></li>	
+                <li><a href="/admin/product">企业</a></li>	
+                <li><a href="/admin/news">新闻</a></li>	
+                <li><a href="">关于我们</a></li>	
+                <li><a href="">招贤纳士</a></li>	
+            </ul>
+        </nav>
+    </header>
+    <section class="warp">
+        <div class="sidebar">
+            <h3>企业列表</h3>
+            <ul>
+                <li>工种列表</li>
+            </ul>
+        </div>
+        <div class="product program">
+            <h4 class="title">product</h4>
+            <div class="add">＋</div>
+                <ul>
+                    <% if(products.length){
+                        products.forEach(function(product){ %>
+                            <li class="list">
+                                <div><b>最后更新时间：</b><span><%= moment(product.meta.updateAt).format('MM-DD') %></span> </div>
+                                <div> 
+                                    <b>企业：</b> 
+                                    <span contenteditable="true" class="title content"><%= product.title %></span>
+                                </div>
+                                <div class="upload_form">
+                                    <a href="javascript:;" class="file_box">
+                                        <input class="selectPic" type="file"/>
+                                        <div class="coverPic cover" style="background-image: <%= product.cover %>"></div>
+                                        <span>点 击 更 换 图 片</span>
+                                    </a>
+                                </div>
+                                <div> 
+                                        <b>企业介绍：</b> 
+                                        <span contenteditable="true" class="intro content"><%= product.intro %></span>
+                                    </div>
+                                <div> 
+                                    <b>工种：</b> 
+                                    <span contenteditable="true" class="workType content"><%= product.workType %></span>
+                                </div>
+                                <div> 
+                                    <b>薪资说明：</b> 
+                                    <span contenteditable="true" class="pay content"><%- product.pay %></span>
+                                </div>
+                                <div> 
+                                    <b>福利说明：</b> 
+                                    <span contenteditable="true" class="benefit content"><%- product.benefit %></span>
+                                </div>
+                                <div> 
+                                    <b>用工说明：</b> 
+                                    <span contenteditable="true" class="task content"><%- product.task %></span>
+                                </div>
+                                <div> 
+                                    <b>要求说明：</b> 
+                                    <p contenteditable="true" class="require content"><%- product.require %></p>
+                                </div>
+                                
+                                <div class="upload_form">
+                                    <a href="javascript:;" class="file_box">
+                                        <input class="selectPic" type="file"/>
+                                        <div class="coverPic code" style="background-image: <%= product.code %>"></div>
+                                        <span>点 击 更 换 图 片</span>
+                                    </a>
+                                </div>
+                                <div class="set">
+                                    <ul>
+                                        <li  class="update" data_id="<%= product._id %>">更新</li>
+                                        <li class="del" data_id="<%= product._id %>">删除</li>
+                                    </ul>
+                                </div>
+                                
+                            </li>
+                        <% })
+                    } %>
+                </ul>
+        </div>
+    
+    </section>
+    <script src="/library/js/jQuery.min.js"></script>
+    <script src="/admin/js/product.js"></script>
+    <script>
+        
+    </script>
+    </body>
+    
+    </html>

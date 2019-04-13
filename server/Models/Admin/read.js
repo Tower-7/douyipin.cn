@@ -1,5 +1,5 @@
-var mongoose = require('mongoose')
-var ReadSchema = require('../../Schemas/Admin/read')
-var Read = mongoose.model('Read',ReadSchema)
+let mongoose = require('mongoose')
+let ReadSchema = require('../../Schemas/Admin/read')
+let Read = mongoose.model('Read',ReadSchema)
 
 module.exports = Read

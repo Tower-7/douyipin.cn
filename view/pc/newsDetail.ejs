@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include template/head.ejs %>
+    <link rel="stylesheet" href="/pc/css/news.css" /> 
+    <link rel="stylesheet" href="/pc/css/newsDetail.css" /> 
+</head>
+
+<body class="house commonHtml" data-id="<%= news[0]._id %>"> 
+    <% include template/header.ejs %>
+    <div class="bannerBox"> 
+        <div class="bd"> 
+            <ul> 
+                <li style="background-image: url(/pc/img/business-01.jpg);"></li> 
+            </ul> 
+        </div> 
+    </div>
+    <section class="title"><h1><%= news[0].title %></h1></section>
+    <section class="content"></section>
+    
+    <% include template/footer.ejs %>
+    <% include template/sidebar.ejs %>
+    <% include template/script.ejs %>
+    <script src="/pc/js/news.js"></script>
+</body>
+</html>

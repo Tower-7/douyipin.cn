@@ -4,6 +4,8 @@ const Pc = require('./Controllers/pc')
 const Move = require('./Controllers/move')
 const Admin = require('./Controllers/admin')
 const Qiniu = require('./Controllers/qiniu')
+const Product = require('./Controllers/Admin/product')
+const News = require('./Controllers/Admin/news')
 const router = new Router()
 
 module.exports = (app) => {
@@ -21,6 +23,7 @@ module.exports = (app) => {
 	
     router.get('/',Pc.index)//pc主页
     router.get('/news',Pc.news)//新闻页
+    router.get('/news/:id',Pc.newsDetail)//新闻详情页
     router.get('/business',Pc.business)//商业合作
     router.get('/join',Pc.join)//关于我们
     router.get('/about',Pc.about)//关于我们
@@ -39,9 +42,25 @@ module.exports = (app) => {
 	router.post('/m/qiniu',Move.signRequired,Qiniu.upload)
 
 
-	//admin
-    router.get('/admin',Admin.index) //移动主页
 	
+	//admin
+	router.get('/admin/sign',Admin.sign) //登陆注册
+	router.get('/admin',Admin.signRequired,Admin.index)
+	router.post('/admin/updateLogo',Admin.signRequired,Admin.updateLogo)//updateLogo
+	router.post('/admin/updatBanner',Admin.signRequired,Admin.updatBanner)//updateLogo
+	router.post('/admin/updateProductType',Admin.signRequired,Admin.updateProductType)//updateProductType
+	router.post('/admin/updateAbout',Admin.signRequired,Admin.updateAbout)//updateAbout
+	router.post('/admin/updateScope',Admin.signRequired,Admin.updateScope)//updateScope
+	router.post('/admin/updateService',Admin.signRequired,Admin.updateService)//updateService
+	router.post('/admin/delProductType',Admin.signRequired,Admin.delProductType) //delProductType
+	router.post('/admin/delService',Admin.signRequired,Admin.delService) //delService
+
+	router.get('/admin/product',Admin.signRequired,Product.index)
+	router.post('/admin/updateProduct',Admin.signRequired,Product.updateProduct)//updateProductType
+	router.get('/admin/news',Admin.signRequired,News.index)
+	router.post('/admin/addNews',Admin.signRequired,News.addNews)
+	router.get('/getNews/:id',News.getNews)
+	router.post('/admin/delById',Admin.signRequired,Product.delById)
 
 	
 

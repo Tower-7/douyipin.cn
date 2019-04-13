@@ -1,29 +1,23 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
  <head>
-  <meta charset="UTF-8" />
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
-  <title>江苏仁铼劳务服务有限公司</title>
-  <link rel="stylesheet" href="/pc/css/common.css" /> 
-  <script src="https://www.vankeservice.com/js/jQuery.min.js"></script> 
-  <script src="https://www.vankeservice.com/js/jquery.SuperSlide.2.1.2.js"></script> 
-  <script src="https://www.vankeservice.com/js/main.js"></script> 
+  <% include template/head.ejs%>
   <link rel="stylesheet" href="/pc/css/join.css" /> 
  </head> 
  <body> 
     <% include template/header.ejs %>
   <div class="culture commonHtml"> 
-   <div class="bannerBox" style="background-image: url(https://www.vankeservice.com/image/join/joinBg.jpg)"></div> 
+   <div class="bannerBox" style="background-image: url(/pc/img/join-02.jpg)"></div> 
    <div class="commonWrap" style="background-color: #f8f8f8">
     <div class="container">
      <div class="subNav">
       <div class="breadcrumb">
        <img src="/pc/img/join/bridge_blue.png" alt="" />
-       <a href="join.aspx">加入我们</a>
+       <a href="javascript::">加入我们</a>
       </div>
       <div class="tabBox">
        <ul>
-        <li class=""><a href="join.aspx?type=26">人才招聘</a></li>
+        <li class=""><a href="javascript::">人才招聘</a></li>
        </ul>
       </div>
      </div>
@@ -41,7 +35,7 @@
      <div class="container"> 
       <ul> 
        <li class="li_pc">
-          <img src="https://www.vankeservice.com//upload/img/2018-01-04/9a42f8d4-6f1b-4bc3-bbee-6dfa816f70ef.png" alt="" />
+          <img src="/pc/img/9a42f8d4-6f1b-4bc3-bbee-6dfa816f70ef.png" alt="" />
           <div class="joinleft">
               <p>职位: 招聘店长</p>
               <p>薪资: 2100-8000</p>
@@ -52,7 +46,7 @@
           <div class="joinright"><img src="/home/getJob.jpg" alt=""></div>
         </li>
         <li class="li_pc">
-            <img src="https://www.vankeservice.com//upload/img/2018-01-04/292c9ea8-acde-4252-b5a3-532728d1d37e.png" alt="" />
+            <img src="/pc/img/292c9ea8-acde-4252-b5a3-532728d1d37e.png" alt="" />
             <div class="joinleft">
                 <p>职位: 网络运维</p>
                 <p>薪资: 5000-8000</p>
@@ -63,7 +57,7 @@
             <div class="joinright"><img src="/home/getJob.jpg" alt=""></div>
         </li>
         <li class="li_pc">
-            <img src="https://www.vankeservice.com/upload/img/2018-01-04/f4ea94ad-dc9f-41fd-b7b4-0cfbd1d3fd61.png" alt="" />
+            <img src="/pc/img/f4ea94ad-dc9f-41fd-b7b4-0cfbd1d3fd61.png" alt="" />
             <div class="joinleft">
                 <p>职位: 人事</p>
                 <p>薪资: 3000-4000</p>
@@ -78,51 +72,8 @@
     </div> 
    </div> 
   </div> 
-  <script src="https://www.vankeservice.com/js/smooth.js"></script> 
-  <script src="https://www.vankeservice.com/js/blocksit.js"></script> 
-  <script type="text/javascript">
-    var ul_obj = $('.bottomList');
-    var more_btn = $('.moreIcon');
-    $(function () {
-        var pageIndex = 1, pageSize = parseInt('5');
-        //loadMore(pageIndex, pageSize);
-        more_btn.on('click', function () {
-            loadMore(++pageIndex, pageSize);
-        });
-    });
-    function loadMore(pageIndex, pageSize) {
-        $.ajax({
-            type: 'post',
-            async: false,
-            url: 'WebUserControl/join/GetMainMore.ashx',
-            data: { pageIndex: pageIndex, pageSize: pageSize, typeId: '0' },
-            success: function (data) {
-                var json = eval("(" + data + ")");
-                if (json.List != '') {
-                    ul_obj.append(json.List);
-                    more_btn.css({ "display": "block" });
-                    if (pageIndex > 1) {
-                        $('html,body').animate({ scrollTop: ul_obj.find('.page' + pageIndex).prev().offset().top }, 1000);
-                    }
-                    if (ul_obj.find('.textBox').length >= parseInt(json.Count))
-                        more_btn.css({ "display": "none" });
-                } else
-                    more_btn.css({ "display": "none" });
-            }
-        });
-    }
-</script> 
-
-  <script>
-
-      var urlstr = location.href;
-        $(".navBox li a").each(function () {
-            if ((urlstr + '/').indexOf($(this).attr('href')) > -1 && $(this).attr('href') != '') {
-                $(this).parent().addClass('on').siblings('li').removeClass('on');
-            } else {
-                $(this).parent().removeClass('on');
-            }
-        });
-</script> 
+    <% include template/footer.ejs %> 
+    <% include template/sidebar.ejs %>
+    <% include template/script.ejs%>
  </body>
 </html>

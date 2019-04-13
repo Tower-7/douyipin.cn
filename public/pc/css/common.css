@@ -712,7 +712,7 @@ ul {
           display: inline-block;
           padding-left: 14px;
           padding-right: 8px;
-          background: url(../image/littleRight.png) left center no-repeat; }
+          background: url(../img/littleRight.png) left center no-repeat; }
           .commonHtml .commonWrap .container .subNav .breadcrumb a.current {
             padding-right: 0;
             color: #64ab58; }

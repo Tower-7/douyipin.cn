@@ -1,5 +1,5 @@
-var mongoose = require('mongoose')
-var ProjectSchema = require('../../Schemas/Admin/project')
-var Project = mongoose.model('Project',ProjectSchema)
+let mongoose = require('mongoose')
+let ProjectSchema = require('../../Schemas/Admin/project')
+let Project = mongoose.model('Project',ProjectSchema)
 
 module.exports = Project

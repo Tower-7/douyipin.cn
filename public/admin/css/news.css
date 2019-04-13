@@ -1,0 +1,47 @@
+/* 外框格式 */
+.wrap {margin-top: 30px;}
+/* progarm通用样式 */
+.news {margin-left: 220px;display: none;}
+.news .add,.news h4 {display: inline;font-size: 25px;padding-right: 20px;cursor: pointer;font-weight: normal;}
+.news .table {width: 100%; margin-top: 30px;border-collapse: collapse;border: 1px solid #aaa;}
+.news .table tr:nth-child(odd){background-color: #F5F5F5;}
+.news .table tr:nth-child(even){background-color: #fff;}
+.news .table th {vertical-align: baseline;padding: 5px 15px 5px 6px;background-color: #3F3F3F;border: 1px solid #3F3F3F;text-align: left;color: #fff;}
+.news .table td {vertical-align: text-top;padding: 6px 15px 6px 6px;border: 1px solid #aaa;}
+.news .table .detail {cursor: pointer;}
+
+/* 编辑框 */
+.editWrap {position: fixed;top: 0;left: 0; width: 100%;height: 100vh;background-color: #ccc;display: none;}
+/* 编辑框内框 */
+.editInner {position: relative;width: 50%;height:80vh; margin:10vh auto;background-color: #fff;}
+/* 编辑框标题 */
+.editWrap .title {width: 100%;height: 40px;font-size: 20px; line-height: 40px;padding:3px 15px;outline: none;border:none;color: #555;}
+/* 编辑框添加按钮 */
+.editWrap .editController .add{width: 100%;position: absolute;top: 40px;cursor: pointer;}
+
+/* 编辑框内容区域 */
+.editWrap .content {padding: 5px; margin-top: 20px;height:calc(80vh - 180px);overflow-y: scroll;}
+.editContent>div{margin-bottom: 5px}
+.editContent .textBox {position: relative;border: 1px solid #ddd;}
+.editContent ul {text-align: right;}
+.editContent .textBox .textContent {margin: 20px 5px;}
+.editContent .set li {display: inline-block;font-size: 12px;padding: 2px 5px;background: #eee;border: 1px solid #ddd;}
+.editContent .picBox {position: relative;border: 1px solid #ddd;}
+.editContent .picBox .picContent img{display: block;width: 80%;margin: 0 auto;}
+/* 编辑框内图片框 */
+.editContent .picBox .PicFile_box {position: relative; display: block; width: 100%;}
+.editContent .picBox .PicFile_box input {position: absolute;top: 0;left: 0; width: 100%;height: 100%;opacity: 0;cursor: pointer;}
+/* 编辑框内容区域添加按钮 */
+.editWrap .content .insertContent{display: block; width: 100%;margin-top: 20px;padding: 5px 0;margin-bottom: 50px; text-align: center;color: #22b473; border:1px solid #22b473;cursor: pointer;}
+
+/* 编辑框下方控制器 */
+.addController{position: absolute;bottom: 0;width: 100%;height:90px;border-top: 1px solid #ccc;font-size: 0;display: none;}
+
+.addController>div {width: 50%;height: 100%; display: inline-block;text-align: center;position: relative;}
+.addController>div img {width: 30px;margin-top: 30px; text-align: center;cursor: pointer;}
+.addController .pic .file_box {position: relative; display: block; width: 100%;height: 100%;}
+.addController .pic input {position: absolute;top: 0;left: 0; width: 100%;height: 100%;opacity: 0;cursor: pointer;}
+.editTop {position: absolute;top: 0;width: 60%;padding:0 20%;height: 40px;border-bottom: 1px solid #ddd;}
+.editTop li {float: right;padding: 0 15px;line-height: 40px;cursor: pointer;}
+.editTop li:hover {color: #fff;background-color: #3F3F3F}
+.news .table .det {cursor: pointer;}

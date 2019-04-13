@@ -1,0 +1,18 @@
+.title {
+    margin: 50px 0;
+    font-size: 20px;
+    text-align: center;
+}
+.content {
+    width: 50%;
+    margin: 0 auto 100px;
+    line-height: 40px;
+    font-size: 16px;
+}
+.content img {
+    width: 100%;
+    margin: 0 auto;
+}
+.content .text {
+    text-indent: 2em;
+}
