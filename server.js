@@ -45,4 +45,4 @@ ejs(app, {
 router(app)
 //设置全局moment
 global.moment = moment;
-app.listen(2000);
+app.listen(8000);
